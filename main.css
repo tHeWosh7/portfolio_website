@@ -23,16 +23,6 @@
      background-size: 1800px 710px;
      
  }
-
- body {
-   background-color: #333;
-   color: whitesmoke;
-   background-image:url(8E8F4C70-9E67-4E0C-B600-2C571B687166-removebg.png);
-   background-position: left;
-   background-size:auto;
-
- }
-
 .footer {
     position:fixed;
     bottom:0;
