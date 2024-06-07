@@ -2,6 +2,9 @@
      font-size: 12px
 
  }
+ body{
+   background-color: white;
+ }
  h1{
     font-size: 13px
  }
@@ -16,11 +19,11 @@
  }  
 
  body {
-     background-color: #333;
-     color: whitesmoke;
-     /* background-image:url(0C011ED1-74EB-485C-95E0-D81B6E773846.jpg); */
-     background-position: centre down;
-     background-size: 1800px 710px;
+     color: black;
+     height: 100%;
+     background-image: url(./0C011ED1-74EB-485C-95E0-D81B6E773846.jpg);
+     background-repeat: no-repeat; 
+     background-size: cover;
      
  }
 .footer {
@@ -33,5 +36,6 @@
 
 
 }
+
 
 
