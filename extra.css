@@ -1,0 +1,218 @@
+;
+   .navbox:hover{
+       background-color:#00b478;
+       border-color: white;
+       color:white;
+   }
+   .con_button{
+       background-color:#035f7b;
+       font-family:'Franklin Gothic Medium', 'Arial Narrow';
+       color:white;
+       font-weight: bold;
+       margin-top:12px;
+       border-style:solid;
+       border-width:2px;
+       border-color:white;
+       margin-bottom: 100px;
+       border-spacing: 3px;
+       height:50px;
+       width:150px;
+       padding:5px;
+       cursor:pointer;
+       transition: 0.2s;
+       margin-right:20px;
+   }
+   
+   .con_button:hover{
+       background-color:white;
+       color:#00b478;
+
+   }
+   .con_button:active{
+       position:sticky;
+       font-size:large;
+       font-weight: bold;
+       border-width: 2px;
+       border-color: #f27d42;
+       
+   }
+   .nav_About:active,.nav_Home:active,.nav_Project:active{
+       text-shadow:black;
+       text-shadow:15px;
+       cursor:pointer;
+   }
+   .nav_About,.nav_Home,.nav_Project{
+       margin-top:8px;
+       padding-top:20px;
+       padding-left: 70px;
+   }
+   
+   .nav_Home,.nav_Project,.nav_About{
+       display: inline-end;
+       width:100px;
+       text-align: center;
+       align-items:end;
+       padding-right:100px;
+       text-decoration:none;
+       color:white;
+       margin-top:8px;
+       padding-top:20px;
+       padding-left: 70px;
+       
+   }
+   .nav_Project:hover,.nav_Home:hover,.nav_About:hover{
+       position:relative;
+       display:inline-block;
+       width:100px;
+       font-size:larger;
+       text-align: center; 
+       align-items:end;
+       padding-right:100px;
+       text-decoration:none;
+       block-size:40px;
+       background-color:white;
+       color:#00b478;
+       border-style:solid;
+       border-spacing:5px;
+       transition:.5;
+   } 
+    .nav_About{
+       position:relative;
+       width:100px;
+       font-size:larger;
+       text-align: center; 
+       align-items:end;
+       padding-right:100px;
+       text-decoration:none;
+       color:whitesmoke;
+    }
+    .nav_Home{
+       position:relative;
+       width:100px;
+       font-size:larger;
+       text-align: center; 
+       align-items:end;
+       padding-right:100px;
+       text-decoration:none;
+       color:whitesmoke;
+    }
+    .nav_Project{
+       position:relative;
+       width:100px;
+       font-size:larger;
+       text-align: center; 
+       align-items:end;
+       padding-right:100px;
+       text-decoration:none;
+       color:whitesmoke;
+    }
+       /* .con_button:active{
+       position:relative;
+       width:100px;
+       font-size:larger;
+       text-align: center; 
+       align-items:end;
+       padding-right:100px;
+       text-decoration:none;
+       color:whitesmoke;
+   }  */
+   .navbox_Name {
+       float:right;
+   }
+   .bgimage{
+       margin-left:20px;
+       background-color:#035f7b;
+       border-radius:250px;
+       border:double;
+       border-width:5px;
+       border-color:white;
+       margin-top:150px;
+       height:500px;
+       position:static;
+       justify-items:flex-start; 
+   }
+   .bgimage:hover{
+       background-color:#00b478;
+   }
+   a:
+   @media (max-width: 870px)
+   {
+       .navbox:decrement(10%){
+       font-size:cal(100%-50%);
+       inline-size: 30px;
+       display:flex;
+       flex-direction: row;
+       /* justify-content: center; */
+       position:relative;
+       width:98.5%;
+       border-style:double;
+       height:80px;
+       border-width: 5px;
+       border-color:white;
+       text-align:center;
+       color:white;
+       padding: 5px;
+       margin-top:1px;
+       padding-right:8px;
+       color:white;
+       background-color:#035f7b;
+       justify-content:end;
+       cursor:grab;
+   }
+   @media (max-width: 480px)
+   {
+       .navbox{
+           width:fill;
+           height:50px;
+           /* margin-top:10px; */
+           margin-right:none;
+           background-color:#035f7b;
+           border-color: white;
+           padding-left:3px;
+           color:red;
+           font-size:10px;    
+           float:left;
+           align-items:end;
+       }
+       .navbox:hover{
+       background-color:#00b478;
+       border-color: white;
+       color:white;
+       }
+       .con_button{
+           height:20px;
+           width: 60px;
+           float:right;
+           text-align:center;
+           font-size: 10px;
+           /* padding-top:2px; */
+       } 
+       .con_button:hover{
+       background-color:white;
+       color:#00b478;
+       font-size:smaller;
+       }
+       .Home,.project,.about{
+       float:inline-end;
+       width:100px;
+       /* text-align: center; */
+       align-items:end;
+       padding:5px;
+       text-decoration:none;
+   }
+   .con_button:active{
+       font-size:smaller;
+       text-align: center;
+       font-weight: bold;
+       border-width: 2px;
+       border-color: #f27d42;
+   }
+   .Project,.Home,.About,.button1:hover{
+       float:inline-end;
+       width:10px;
+       text-align: center;
+       align-items:end;
+       padding-right:100px;
+       text-decoration:none;
+       color:whitesmoke;
+   }

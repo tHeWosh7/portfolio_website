@@ -1,264 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" hreg="main.css"> -->
-        <link rel="scriptwriter" hreg="about.html">
-    </head>
-    <body> 
-        <header>
-            <title>PROTFOLIO</title>
-        <nav>
-            <div class="navbox">
-                <a alt="#" href="index.html" class="nav_Home">HOME</a>
-                <a alt="#" href="about.html" class="nav_About">ABOUT</a>
-                <a alt="#" href="Project.html" class="nav_Project">PROJECTS</a>
-                <a class="button1"><button class="con_button">CONTACT</button></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Diwash</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="repeated.css">
+</head>
+<body>
+    <header>
+        <nav id="nav_header">
+        <div class="nav_left">
+            <div class="logo">
+                 <p class="nav_logo">Diwash</p>
+                 <!-- <span>.</span> -->
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="list_class">
+                        <a href="#home" class="nav_link">Home</a>
+                        <!-- <div class="circle"></div> -->
+                    </li>
+                    <li class="list_class">
+                        <a href="#about" class="nav_link">About</a>
+                        <!-- <div class="circle"></div> -->
+                    </li>
+                    <li class="list_class">
+                        <a href="#projects" class="nav_link">Project</a>
+                        <!-- <div class="circle"></div> -->
+                    </li>
+                    <li class="list_class">
+                        <a href="#contact" class="nav_link">Contact</a>
+                        <!-- <div class="circle"></div> -->
+                    </li>
                 </ul>
             </div>
-        </nav>
-        </header>
-    <img class="bgimage" src="8E8F4C70-9E67-4E0C-B600-2C571B687166-removebg.png" alt="Picture">
-</body>
-<style>
-:root{
-    background-color:#f27d42;
-}
-    .navbox{
-        inline-size: 30px;
-        display:flex;
-        flex-direction: row;
-        /* justify-content: center; */
-        position:relative;
-        width:98.5%;
-        border-style:double;
-        height:80px;
-        border-width: 5px;
-        border-color:white;
-        text-align:center;
-        color:white;
-        padding: 5px;
-        margin-top:1px;
-        padding-right:8px;
-        color:white;
-        background-color:#035f7b;
-        justify-content:end;
-        cursor:grab;
-    }
-    .navbox:hover{
-        background-color:#00b478;
-        border-color: white;
-        color:white;
-    }
-    .con_button{
-        background-color:#f27d42;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow';
-        color:white;
-        font-weight: bold;
-        margin-top:12px;
-        border-style:solid;
-        border-width:2px;
-        border-color:white;
-        margin-bottom: 100px;
-        border-spacing: 3px;
-        height:50px;
-        width:150px;
-        padding:5px;
-        cursor:pointer;
-        transition: 0.2s;
-        margin-right:20px;
-    }
-    .con_button:hover{
-        background-color:white;
-        color:#00b478;
+        </div>
+        <div class="nav-button">
+            <button class="btn">Download CV </button>
+            
 
-    }
-    .con_button:active{
-        position:relative;
-        font-size:large;
-        font-weight: bold;
-        border-width: 2px;
-        border-color: #f27d42;
-        
-    }
-    .nav_About:active,.nav_Home:active,.nav_Project:active{
-        text-shadow:black;
-        text-shadow:15px;
-        cursor:pointer;
-    }
-    .nav_About,.nav_Home,.nav_Project{
-        margin-top:8px;
-        padding-top:20px;
-        padding-left: 70px;
-    }
+        </div>
+    </nav>
+    </header>
+    <main>
+    <section class="First_section">
+    <div class="left_section">
+             Hi, My name is <span class="colors">Diwash</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+    </div>
     
-    .nav_Home,.nav_Project,.nav_About{
-        display: inline-end;
-        width:100px;
-        text-align: center;
-        align-items:end;
-        padding-right:100px;
-        text-decoration:none;
-        color:white;
-        margin-top:8px;
-        padding-top:20px;
-        padding-left: 70px;
-        
-    }
-    .nav_Project:hover,.nav_Home:hover,.nav_About:hover{
-        position:relative;
-        display:inline-block;
-        width:100px;
-        font-size:larger;
-        text-align: center; 
-        align-items:end;
-        padding-right:100px;
-        text-decoration:none;
-        block-size:40px;
-        background-color:white;
-        color:#00b478;
-        border-style:solid;
-        border-spacing:5px;
-        transition:.5;
-    } 
-     .nav_About{
-        position:relative;
-        width:100px;
-        font-size:larger;
-        text-align: center; 
-        align-items:end;
-        padding-right:100px;
-        text-decoration:none;
-        color:whitesmoke;
-     }
-     .nav_Home{
-        position:relative;
-        width:100px;
-        font-size:larger;
-        text-align: center; 
-        align-items:end;
-        padding-right:100px;
-        text-decoration:none;
-        color:whitesmoke;
-     }
-     .nav_Project{
-        position:relative;
-        width:100px;
-        font-size:larger;
-        text-align: center; 
-        align-items:end;
-        padding-right:100px;
-        text-decoration:none;
-        color:whitesmoke;
-     }
-        /* .con_button:active{
-        position:relative;
-        width:100px;
-        font-size:larger;
-        text-align: center; 
-        align-items:end;
-        padding-right:100px;
-        text-decoration:none;
-        color:whitesmoke;
-    }  */
-    .navbox_Name {
-        float:right;
-    }
-    .bgimage{
-        background-color:#035f7b;
-        border-radius:250px;
-        border:double;
-        border-width:5px;
-        border-color:white;
-        margin-top:200px;
-        height:500px;
-        position:static;
-        justify-items:flex-start; 
-    }
-    .bgimage:hover{
-        background-color:#00b478;
-    }
-    @media (max-width: 870px)
-    {
-        .navbox:decrement(10%){
-        font-size:cal(100%-50%);
-        inline-size: 30px;
-        display:flex;
-        flex-direction: row;
-        /* justify-content: center; */
-        position:relative;
-        width:98.5%;
-        border-style:double;
-        height:80px;
-        border-width: 5px;
-        border-color:white;
-        text-align:center;
-        color:white;
-        padding: 5px;
-        margin-top:1px;
-        padding-right:8px;
-        color:white;
-        background-color:#035f7b;
-        justify-content:end;
-        cursor:grab;
-    }
-    @media (max-width: 480px)
-    {
-        .navbox{
-            width:fill;
-            height:50px;
-            /* margin-top:10px; */
-            margin-right:none;
-            background-color:#035f7b;
-            border-color: white;
-            padding-left:3px;
-            color:red;
-            font-size:10px;    
-            float:left;
-            align-items:end;
-        };
-        .navbox:hover{
-        background-color:#00b478;
-        border-color: white;
-        color:white;
-        }
-        .con_button{
-            height:20px;
-            width: 60px;
-            float:right;
-            text-align:center;
-            font-size: 10px;
-            /* padding-top:2px; */
-        } 
-        .con_button:hover{
-        background-color:white;
-        color:#00b478;
-        font-size:smaller;
-        }
-        .Home,.project,.about{
-        float:inline-end;
-        width:100px;
-        /* text-align: center; */
-        align-items:end;
-        padding:5px;
-        text-decoration:none;
-    }
-    .con_button:active{
-        font-size:smaller;
-        text-align: center;
-        font-weight: bold;
-        border-width: 2px;
-        border-color: #f27d42;
-    }
-    .Project,.Home,.About,.button1:hover{
-        float:inline-end;
-        width:10px;
-        text-align: center;
-        align-items:end;
-        padding-right:100px;
-        text-decoration:none;
-        color:whitesmoke;
-    }
-</style>   
+
+    <div class="right_section">
+        <img src="ironman.png" alt="#" class="dp_image">
+    </div>
+    </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="porfolio.js"></script>
+</body>
 </html>
