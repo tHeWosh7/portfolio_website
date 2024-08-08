@@ -216,6 +216,17 @@ main .github_btn{
    background:rgb(118, 118, 118);
 }
 .About_section{
-   height: 100vh;
+   display:flex;
+   background-color: red;
+   height: 100%;
    width:100%;
+}
+.About_section div{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   background-color:rgb(120, 1, 1);
+   border: 2px solid white;
+   width:40vw;
+   height:80vh;
 }
