@@ -19,7 +19,7 @@
             <div class="nav-menu" id="myNavMenu">
                 <ul class="nav_menu_list">
                     <li class="list_class">
-                        <a href="#home" class="nav_link">Home</a>
+                        <a href="#home" class="nav_link" >Home</a>
                         <!-- <div class="circle"></div> -->
                     </li>
                     <li class="list_class">
@@ -46,12 +46,23 @@
                         <a href="#contact" class="nav_link">Contact</a>
                         <!-- <div class="circle"></div> -->
                     </li>
-                    <li class="list_class">
-                        <a href="#about" class="nav_link" >F</a>
-                        <!-- <div class="circle"></div> -->
+                    <li class="list_class social_icons">
+                        <!-- <span>Social Links</span> -->
+                        <div>
+                            <a href="#about" class="nav_link facebook social_icons_styles" >F</a>
+                        </div>
+                            <!-- <div class="circle"></div> -->
+                        <div>
+                        <a href="#about" class="nav_link linkedin social_icons_styles">Li</a>
+                        </div>
+                        <div>
+                        <a href="#about" class="nav_link linked instagram social_icons_styles">In</a>
+                        </div>
+                        <div>
+                        <a href="#about" class="nav_link linked github social_icons_styles">GH</a>
+                        </div>
                     </li>
                     <li class="list_class">
-                        <a href="#about" class="nav_link">Li</a>
                         <!-- <div class="circle"></div> -->
                     </li>
                 </ul>
@@ -62,8 +73,9 @@
         
 <!----------Body with sections---------->
     <div class="container_right s80">
+    <div class="nav_infos">
     <!----------  H O M E  ---------->
-    <section class="Home_section">
+    <section id="home" class="Home_section">
         <div class="first_left_section">
             Hi, My name is <span class="colors">Diwash</span>
             <div>and I am a passionate</div>
@@ -76,15 +88,16 @@
     <div class="first_right_section ">
         <img src="ironman.png" alt="#" class="dp_image">
     </div>
-    </section>
+    </div>
     <div class="nav-button">
         <button class="btn_download">Download CV <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></button>
         <button class="btn_github"><a class="github_btn" href="https://github.com/tHeWosh7">GitHub</a></button>
     </div>
+    </section>
    
     <!-- <hr class="Page_breaker_home"> -->
     <!----------  A B O U T  ---------->
-    <section class="About_section padd_15 border">
+    <section id="about" class="About_section padd_15 border">
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
@@ -92,16 +105,22 @@
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
     </section>
-    <section class="skills_Education_section">
-       <div class="div_1 padd_15 mar_10 border">
-            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
-            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
-            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
-            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
-            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
-            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
+    <!----------  Skills Section  ---------->
+    <section id="skills" class="skills_section">
+        <div class="div_1 padd_15 mar_10 border">
+           <div class="outcircle_skills_html">
+            <div class="innercircle_skills_html">HTML   
+            </div>
+           </div>
+           <div class="outcircle_skills_css">
+            <div class="innercircle_skills_css">CSS    
+            </div>
+           </div><div class="outcircle_skills_js">
+            <div class="innercircle_skills_js">JS   
+            </div>
+           </div>
         </div>
-        <div class="div_2 padd_15 mar_10 border">
+        <!-- <div class="div_2 padd_15 mar_10 border">
             <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
             <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
             <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
@@ -109,15 +128,76 @@
             <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
             <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
 
+        </div> -->
+    </section> 
+    <!----------  Education Section  ---------->
+    <section id="Education" class="Education_section border">
+        <div class="header_index">
+            <a>Aadarsha (2004-2018)</a>
+            <a>+</a>
         </div>
-    </section> <section class="Contact_section padd_15 border">
-       
+        <div class="bottom_detail_info border">
+            <a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero quam, reprehenderit porro earum accusamus, quisquam iusto voluptate eveniet corporis totam incidunt ullam numquam consequuntur saepe deserunt consequatur mollitia! Assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nihil quas consectetur quisquam laborum, alias ea! Consequatur, magni ipsum quo maiores ratione voluptates adipisci sequi illo! Quas illo alias et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis amet est laborum quaerat ducimus cupiditate veritatis temporibus minima placeat neque vero dolor, laudantium animi deserunt porro, nisi obcaecati excepturi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, dolor! Repellendus sapiente quis mollitia nam quae facilis id accusamus vero, incidunt dignissimos aut, consectetur ratione nulla sint perferendis reprehenderit animi.</a>
+        
+        </div>
+        <div class="header_index">
+            <a>Capital College and Research Center (CCRC) (2018-2020)</a>
+            <a>+</a>
+        </div>
+        <div class="bottom_detail_info border">
+            <a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero quam, reprehenderit porro earum accusamus, quisquam iusto voluptate eveniet corporis totam incidunt ullam numquam consequuntur saepe deserunt consequatur mollitia! Assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nihil quas consectetur quisquam laborum, alias ea! Consequatur, magni ipsum quo maiores ratione voluptates adipisci sequi illo! Quas illo alias et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis amet est laborum quaerat ducimus cupiditate veritatis temporibus minima placeat neque vero dolor, laudantium animi deserunt porro, nisi obcaecati excepturi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, dolor! Repellendus sapiente quis mollitia nam quae facilis id accusamus vero, incidunt dignissimos aut, consectetur ratione nulla sint perferendis reprehenderit animi.</a>
+        
+        </div>
+        <div class="header_index">
+            <a>St. Lawrence (2022-Present)</a>
+            <a>+</a>
+        </div>
+        <div class="bottom_detail_info">
+            <a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero quam, reprehenderit porro earum accusamus, quisquam iusto voluptate eveniet corporis totam incidunt ullam numquam consequuntur saepe deserunt consequatur mollitia! Assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nihil quas consectetur quisquam laborum, alias ea! Consequatur, magni ipsum quo maiores ratione voluptates adipisci sequi illo! Quas illo alias et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis amet est laborum quaerat ducimus cupiditate veritatis temporibus minima placeat neque vero dolor, laudantium animi deserunt porro, nisi obcaecati excepturi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, dolor! Repellendus sapiente quis mollitia nam quae facilis id accusamus vero, incidunt dignissimos aut, consectetur ratione nulla sint perferendis reprehenderit animi.</a>
+        
+        </div>
+    <!------------Experience Section ---------->
+    </section>
+    <section id="Experience" class="Experience_section padd_15">
+    <div class="left_animation">
+        <div class="line">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <!-- <span class="end_point"></span> -->
+        </div>
+
+    </div>
+    <div class="right_information">
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
-        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consequuntur, perspiciatis labore ratione non adipisci velit ex, culpa est natus doloremque autem veniam vitae sit provident illo similique suscipit laborum?</h1>
+
+    </div>
+    </section>
+    <section id="projects" class="Project_section">
+        <div class="slider_wrapper">
+            <div class="slider">
+                <img id="slider_1" src="project_sample/project_1.jpg" alt="#">
+                <img id="slider_2" src="project_sample/project_2.jpg" alt="#">
+                <img id="slider_3" src="project_sample/project_3.jpg" alt="#">
+                <img id="slider_4" src="project_sample/project_4.jpg" alt="#">
+                <img id="slider_5" src="project_sample/project_5.jpg" alt="#">
+                
+            </div>
+            <div class="slider_nav">
+                <a href="#slider_1"></a>
+                <a href="#slider_2"></a>
+                <a href="#slider_3"></a>
+                <a href="#slider_4"></a>
+                <a href="#slider_5"></a>
+            </div>
+        </div>
+
     </section>
 
  
