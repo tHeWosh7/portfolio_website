@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jaini+Purva&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Six+Caps&display=swap');/*  font-family: "Orbitron", sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jaini+Purva&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root{
---first-color:#cececd;
+--first-color:#000000;
 --second-color:#008817;
 --fifth-color:#424242;
 --third-color:#006d99;
@@ -28,10 +28,10 @@ body{
    margin:0;
    padding:0;
    /* height: 100%; */
-   width:fit-content;
+   width:100%;
    display: flex;
    flex-direction: row;
-   background-color: var(--first-color);
+   /* background-color: var(--first-color); */
    position:absolute;
    /* align-items:space-between; */
 }
@@ -45,12 +45,12 @@ body{
 .nav_wrapper{
    display:flex;
    /* background: #000; */
-   width:fit-content; 
+   width:100%; 
    /* position:absolute; */
 }
 .container_left{
    margin:0;
-   border-right: 2px solid var(--first-color);
+   border-right: 4px solid cadetblue;
    position:fixed;
    display: flex;
    flex-direction: column;
@@ -60,7 +60,7 @@ body{
    /* margin:0px; */
    height:100vh;
    z-index:100;
-   background-color:var(--forth-color);
+   background-color:var(--first-color);
 
 }
 
@@ -152,23 +152,19 @@ body{
    /* object-fit: cover; */
 /* } */
 .body_wrapper{
-   display:flex;
-   width:80%;
+   /* display:flex; */
+   /* flex-direction:column; */
+   width:84.5%;
    position:absolute;
    padding-left:220px;
+   /* background-color: blue; */
 }
 .container_right{
-   /* object-fit: cover;  */
-   /* overflow-x:none; */
-   position:absolute;
-   /* margin-left:220px; */
-   margin-right:0;
-   padding:0;
    display: flex;
-   flex-direction: column;
-   background-color: var(--first-color);
-   width:100%;
-   height:100%;
+   flex-direction:column;
+   background-color:#fff;
+   /* width:100%; */
+   /* height:100%; */
 }
 
 .border{
@@ -203,7 +199,7 @@ body{
    font-family: "Jaini Purva", system-ui;
    font-size: 1.3rem;
    font-stretch:wider;
-   color: var(--fifth-color);
+   color: var(--forth-color);
    text-decoration: none;
 
 
@@ -225,7 +221,7 @@ body{
 
 .nav_logo{
    font-family: "Jaini Purva", system-ui;
-   color: var(--second-color);
+   color: cadetblue;
    display:flex;
    justify-content:center;
    align-items:center;
@@ -300,20 +296,41 @@ body{
    margin-left:8vw;
    margin-bottom: 35vh;;
 }
-
 .Home_section{
 
-   /* position:absolute; */
+   position:relative;
    display:flex;
+   height: 100%;
+   width:100%;
    /* flex-direction:; */
    /* flex-wrap: nowrap; */
-   justify-content: space-around;
+   justify-content:center;
    /* margin: 23px 0; */
-   gap:20vw;
-   width:max-content;
-   height:max-content;
+   /* gap:50vw; */
    /* padding:20vh; */
 }
+.home_wrap{
+   display:flex;
+   width:100%;
+   flex-direction:column;
+   /* background-color:green; */
+   justify-content: space-between;
+}
+.home_infos{
+   position:relative;
+   /* background-color: red; */
+   display:flex;
+   width:cover;
+   gap:12vw;
+   height:99vh;
+   flex-direction: row;
+}
+.home_btns{
+   z-index:1;
+   display:flex;
+   /* justify-content:flex-end; */
+}
+
 .first_left_section{
    line-height: 60px;
    font-family: "Dancing Script", cursive;
@@ -342,8 +359,8 @@ body{
 }
 .dp_image{
    cursor:grab;
-   height:70vh;
-   width: 28vw;
+   height:40vh;
+   width: 18vw;
    animation-delay:0.32s;
    /* animation-duration:5s; */
 }
@@ -369,12 +386,19 @@ body{
 .About_section{
    display:flex;
    /* position:absolute; */
-   height: 95vh;
-   width:80%;
-   padding-left:30px;
-   margin-left:30px;
+   height: 98vh;
+   width:100%;
+   /* padding-left:30px; */
 }
-.Ab
+.About_section .first{
+   padding-left:30px;
+   color:black;
+}
+.About_section .other{
+   color:black;
+   padding-left:10px;
+   
+}
 .indexLines{
    width: 3px;
    margin-left:20vh;
@@ -385,9 +409,9 @@ body{
 .skills_section{
    display:flex;
    /* position:absolute; */
-   width:82vw;
+   width:100%;
+   height: 99vh;
    padding:0vh;
-   height:180;
 }
 .skills_section .div_1{
    display:flex;
@@ -397,17 +421,17 @@ body{
 
 }
 .skills_section .div_1{
-   position:relative;
+   /* position:relative; */
    display:flex;
    justify-content: center;
    /* flex-direction: row; */
    align-items: center;
    /* padding:5vh; */
-   /* margin-left:50vh; */
+   margin-left:50vh;
    /* padding-left:20vh; */
    height:95vh;
-   padding:0 10vw;
-   margin:0 10vw;
+   /* padding:0 10vw; */
+   /* margin:0 10vw; */
    width:max-content;
    flex-direction: column;
    gap:10vh;
@@ -501,8 +525,8 @@ svg{
 .Education_section{
    display:flex;
    position:relative;
-   padding:20vh;
-   height:95vh;
+   padding:0 10vh;
+   height:99vh;
    justify-content: center;
    max-width:100%;
    flex-direction: column;
@@ -550,8 +574,8 @@ svg{
 
 .Experience_section{
    display:flex;
-   /* justify-content:center; */
-   padding-left:30vh;
+   /* align-items:center; */
+   padding: 10vh;
    color:#006c42;
    gap: 8vh;
    height: 98vh;
@@ -610,13 +634,12 @@ svg{
 }
 .Project_section{
    display:flex;
-   margin-top: 15vh;
+   /* margin-top: 15vh; */
    align-items: center;
    justify-content: center;
    flex-direction: row;
    /* background:url("/project_sample/project_2.jpg") no-repeat center center/cover; */
-   height:100vh;
-   width: 100%;
+   height:98vh;
    padding: 20vh 3vh;
 }
 .Project_section img{
@@ -629,9 +652,9 @@ svg{
    display: flex;
    justify-content: center;
    align-items: center;
-   width:95%;
+   width:80%;
    padding-left:4vh;
-   /* height: 10%; */
+   height: 98vh;
    margin:0 auto;
 }
 .slider{
@@ -685,14 +708,14 @@ svg{
    position:relative;
    justify-content: center;
    align-items: center;
-   /* height:95vh; */
+   height:100vh;
    /* width:82vw; */
    /* padding:20px; */
    background:url("/portfolio_website/project_sample/project_1.jpg") no-repeat center center/cover;
    /* background-color: #013d45; */
 
 }
-.contact_section .form_wrapper{
+.form_wrapper{
    display:flex;
    height:95vh;
    width:40vw;
