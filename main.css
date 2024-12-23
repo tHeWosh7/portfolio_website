@@ -168,7 +168,7 @@ body{
 }
 
 .border{
-   border:2px solid #fff;
+   border:1px solid white;
 }
 
 .nav_left{
@@ -199,7 +199,7 @@ body{
    font-family: "Jaini Purva", system-ui;
    font-size: 1.3rem;
    font-stretch:wider;
-   color: var(--forth-color);
+   color: #7c7b7b;
    text-decoration: none;
 
 
@@ -216,7 +216,8 @@ body{
 } */
 
 .list_class a:hover{
-   transform: scale(1.3);
+   transform: scale(1.1);
+   color:cadetblue;
 }
 
 .nav_logo{
@@ -244,14 +245,13 @@ body{
    display: flex;
    justify-content:flex-start;
    align-items:center;
-   /* gap:5vw; */
-   padding-left:14vw;
-   /* padding-top:-10vh; */
+   /* padding-left:-5vw; */
+   padding-top:15vh;
    /* margin:70px 10px;  */
  }
 .btn_github{
    font-family:"Jaini Purva", system-ui;
-   background: var(--second-color);
+   background: rgba(0, 0, 0, 0.407);
    font-size:18px;
    height:40px;
    width:100px;
@@ -271,7 +271,7 @@ body{
    align-items: center;
    justify-content: center;
    font-family:"Jaini Purva", system-ui;
-   background: var(--second-color);
+   background: cadetblue;
    font-size:18px;
    height:40px;
    width:140px;
@@ -283,7 +283,7 @@ body{
    cursor:pointer;
 }
 .btn_github:hover{
-   animation-duration:0.2s;;
+   animation-duration:0.2s;
    transform: scale(1.086);
    
 }
@@ -384,21 +384,42 @@ body{
 }
 
 .About_section{
+   
    display:flex;
+   justify-content: flex-start;
+   flex-direction: row;
    /* position:absolute; */
    height: 98vh;
    width:100%;
    /* padding-left:30px; */
 }
-.About_section .first{
+.About_left{
+   width:50%;
+   display:flex;
    padding-left:30px;
-   color:black;
+   /* justify-content:center; */
+   /* align-items: center; */
+   /* background-color:red; */
 }
-.About_section .other{
-   color:black;
-   padding-left:10px;
-   
+.About_right{
+   display:flex;
+   width:50%;
+   /* background-color: blue; */
 }
+
+
+.About_section .About_left .first{
+   /* padding-left:30px; */
+   font-family: "Orbitron", sans-serif;
+   font-size:16px;
+   line-height:3vh;
+   word-spacing:3px;
+   /* letter-spacing: 2px; */
+   color:cadetblue;
+   /* text-align:center; */
+}
+
+
 .indexLines{
    width: 3px;
    margin-left:20vh;
