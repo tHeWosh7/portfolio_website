@@ -47,33 +47,33 @@ function hideshow3()
 document.getElementById("plus").addEventListener("click",rewrite);
 function rewrite(){
   if (div.style.display==="none"){
-  document.getElementById("plus").innerHTML="-";
+  document.getElementById("plus").innerHTML="+";
   }
   else
   {
-  document.getElementById("plus").innerHTML="+";
+  document.getElementById("plus").innerHTML="-";
   }
 }
 
 document.getElementById("plus2").addEventListener("click",rewrite2);
 function rewrite2(){
   if (divv.style.display==="none"){
-  document.getElementById("plus2").innerHTML="-";
+  document.getElementById("plus2").innerHTML="+";
   }
   else
   {
-  document.getElementById("plus2").innerHTML="+";
+  document.getElementById("plus2").innerHTML="-";
   }
 }
 
 document.getElementById("plus3").addEventListener("click",rewrite3);
 function rewrite3(){
   if (divvv.style.display==="none"){
-  document.getElementById("plus3").innerHTML="-";
+  document.getElementById("plus3").innerHTML="+";
   }
   else
   {
-  document.getElementById("plus3").innerHTML="+";
+  document.getElementById("plus3").innerHTML="-";
   }
 }
 

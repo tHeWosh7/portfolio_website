@@ -20,11 +20,14 @@ html{
    /* margin:-10px;x */
    /* background: var(--second-color); */
    /* overflow:unset; */
+   /* scroll-snap-type:Y mandatory; */
 }
 body::-webkit-scrollbar{
    display:none;
+   background-color: #000;
 }
 body{
+   background: #000;
    margin:0;
    padding:0;
    /* height: 100%; */
@@ -34,6 +37,10 @@ body{
    /* background-color: var(--first-color); */
    position:absolute;
    /* align-items:space-between; */
+}
+section{
+   /* background-color: #000; */
+   scroll-snap-align: start;
 }
 .nav_left{
    display: flex;
@@ -387,15 +394,30 @@ body{
 .About_section{
    
    display:flex;
-   justify-content: flex-start;
-   flex-direction: row;
+   justify-content:flex-start;
+   /* align-items: ; */
+   flex-direction:column;
    /* position:absolute; */
    height: 98vh;
    width:100%;
-   /* padding-left:30px; */
+   /* background-color: #000000; */
+  
+ /* padding-left:30px; */
+}
+.Aboutcont{
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+}
+.Aboutcont .head{
+   font-weight:bolder;
+   font-size:20px;
+   margin-bottom: 10vh;
 }
 .About_left{
-   width:50%;
+   width:40%;
+   flex-direction: column;
    display:flex;
    padding-left:30px;
    /* justify-content:center; */
@@ -404,17 +426,20 @@ body{
 }
 .About_right{
    display:flex;
-   width:50%;
+   width:40%;
+   flex-direction:column;
+   padding:30vh 30px;
+   
    /* background-color: blue; */
 }
 
-
-.About_section .About_left .first{
+.first{
    /* padding-left:30px; */
    font-family: "Orbitron", sans-serif;
-   font-size:16px;
+   font-size:14px;
    line-height:3vh;
-   word-spacing:3px;
+   word-spacing:4px;
+   font-weight: lighter;
    /* letter-spacing: 2px; */
    color:cadetblue;
    /* text-align:center; */
@@ -430,9 +455,10 @@ body{
 }
 .skills_section{
    display:flex;
-   /* position:absolute; */
+   align-items: center;
+   margin-top:-10vh;
    width:100%;
-   height: 99vh;
+   height: 84vh;
    padding:0vh;
 }
 .skills_section .div_1{
@@ -507,7 +533,9 @@ circle{
 
    stroke-dasharray: 440;
    stroke-dashoffset:440;
-   animation: anim 1.5s linear forwards; 
+   animation: anim 3s linear forwards; 
+   animation-timeline:view();
+   animation-range: entry cover 40%;
 
 }
 
@@ -515,6 +543,7 @@ circle{
 @keyframes anim {
    100%{
       stroke-dashoffset:154;
+      
    }
 }
 .back_html, .back_css, .back_js{
@@ -587,6 +616,7 @@ svg{
    /* margin-top:-3vh; */
    z-index:1;
 }
+
 .border2{
    border: 2px solid #005e83;
 }
@@ -609,11 +639,12 @@ svg{
 
 .Experience_section{
    display:flex;
-   /* align-items:center; */
-   padding: 10vh;
+   align-items:center;
+   justify-content: center;
+   /* padding: 10vh; */
    color:#006c42;
    gap: 8vh;
-   height: 98vh;
+   height:100vh;
 }
 
 .Experience_section .left_animation{
@@ -632,6 +663,9 @@ svg{
    flex-direction:column;
    /* margin-top:10px; */
    gap: 14.8vh;
+   animation: lineinc linear;
+   animation-timeline:view();
+   animation-range: entry cover 10%;
 }
 .Experience_section .left_animation .line .dot{
    margin-left:-4px;
@@ -645,6 +679,17 @@ svg{
    justify-content: center;
    align-items: center;
    /* margin-top: 50vh; */
+  
+}
+@keyframes lineinc  {
+   0%{
+      opacity:0;
+      clip-path: inset(0 0 0 0);
+   }
+   100%{
+      opacity:1;
+      clip-path: inset(0 0 0 0);
+   }
 }
 
 .Experience_section .right_information{
@@ -667,15 +712,17 @@ svg{
    color:#0e6a5e;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .Project_section{
    display:flex;
    /* margin-top: 15vh; */
    align-items: center;
    justify-content: center;
    flex-direction: row;
-   /* background:url("/project_sample/project_2.jpg") no-repeat center center/cover; */
-   height:98vh;
-   padding: 20vh 3vh;
+   background-color: #000000;
+   height:100vh;
+   /* padding: 20vh 3vh; */
+   /* background:blur(50px); */
 }
 .Project_section img{
    display: flex;
@@ -746,7 +793,9 @@ svg{
    height:100vh;
    /* width:82vw; */
    /* padding:20px; */
-   background:url("/portfolio_website/project_sample/project_1.jpg") no-repeat center center/cover;
+   /* background:url("/project_sample/project_1.jpg") no-repeat center center/cover; */
+   background-color:cadetblue;
+   backdrop-filter:blur(10px);
    /* background-color: #013d45; */
 
 }
@@ -758,7 +807,7 @@ svg{
    background-color: #0000002c;
    align-items:center;
    flex-direction: column;
-   backdrop-filter: blur(10px);
+   backdrop-filter: blur(4px);
    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
    border-radius: 8px;
    color:var(--forth-color);
@@ -972,8 +1021,8 @@ svg{
    display: flex;
    align-items: center;
    justify-content: center;
-   margin:5vh 0;
-   /* background-color: black; */
+   /* margin:5vzh 0; */
+   background-color: black;
  }
  .footerr{
    display:flex;
@@ -1011,20 +1060,27 @@ svg{
 
   .footerr .footer_info{
    display: flex;
-   align-items: end;
+   /* align-items: end; */
    /* margin-right:-10vh; */
-   flex-direction: column;
+   flex-direction:column;
    /* margin-left:-10vh; */
-   margin-top:0;
-   font-size:20px;
-   
+   /* margin-top:0; */
+   font-size:10px;
+   /* flex-wrap: wrap; */
+
   }
 
 
   .footer_section_links a{
    text-decoration: none;
    color:#949494;
-   font-size:16px;
+  }
+  .footer_info .fot_logo{
+   font-size:20px;
+  }
+  .footer_info .fot_oth{
+   font-size: 14px;
+   margin-top:-1vh;
   }
   .footer_section_links{
    display:flex;
@@ -1042,10 +1098,27 @@ svg{
    background-color: black;
    align-items: center;
    justify-content: center;
-   margin-top:1vh;
+   /* margin-top:1vh; */
    overflow-wrap:normal;
   }
   .footer_infoo:hover{
    background-color: white;
+  }
+
+  @keyframes scrappear{
+   from{
+      opacity:0;
+      clip-path: inset(0 0 0 0);
+   }
+   to{
+      opacity:1;
+      clip-path: inset(0 0 0 0);
+   }
+  }
+  
+  section{
+   animation: scrappear linear;
+   animation-timeline:view();
+   animation-range: entry;
   }
 
