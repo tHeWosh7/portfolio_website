@@ -8,6 +8,7 @@ var typed = new Typed('#element', {
 var div= document.getElementById("div1");
 function hideshow()
 {
+  div.style.visibility="visible";
   if (div.style.display==="none")
   {
     div.style.display="block";
@@ -77,6 +78,11 @@ function rewrite3(){
   }
 }
 
+
+// var scrl=document.getElementById("slider").addEventListener("scroll",sliscr)
+// function sliscr(){
+//   scrl.style.d
+// }
 
 
 
