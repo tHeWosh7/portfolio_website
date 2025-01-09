@@ -1,4 +1,4 @@
-@media (max-width:667px)
+@media (max-width:932px)
 {
     html{
         overflow-x: hidden;
@@ -18,7 +18,7 @@
     
     .container_right{
         width:100vw;
-        margin-left:-33vh;
+        margin-left:-24vh;
 
     }
 
