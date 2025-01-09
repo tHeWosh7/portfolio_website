@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>Portfolio || Diwash</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="repeated.css">
+    <link rel="stylesheet" href="mediaquery.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
 </head>
@@ -73,7 +73,6 @@
                         </div>
                     </li>
                     <div class="personal_info_navigation">
-                        <a class="infoo">diwashacharya449@gmail.com</a>
                     </div>  
                     <li class="list_class">
                         <!-- <div class="circle"></div> -->
@@ -88,15 +87,15 @@
  <div class="body_wrapper">
   <div class="container_right">
       <!----------  H O M E  ---------->
-    <section id="home" class="Home_section border">
-        <div class="home_wrap border">
-            <div class="home_infos border">
+    <section id="home" class="Home_section">
+        <div class="home_wrap">
+            <div class="home_infos">
                 <div class="first_left_section">
                     Hi, My name is <span class="colors">Diwash</span>
                     <div>and I am a passionate</div>
                     <span id="element"></span>
                 </div>
-                <div class="first_right_section ">
+                <div class="first_right_section " id="imgg">
                     <img src="ironman.png" alt="#" class="dp_image">
                 </div>
             </div>
@@ -112,7 +111,7 @@
    
     <!-- <hr class="Page_breaker_home"> -->
     <!----------  A B O U T  ---------->
-    <section id="about" class="About_section border">
+    <section id="about" class="About_section">
     <div class="Aboutcont">
         <h1 class="first head" >Hey, It's me Diwash Acharya. Welcome to my personal website.</h1>
     </div>
@@ -128,7 +127,7 @@
     </div>  
     </section>
     <!----------  Skills Section  ---------->
-    <section id="skills" class="skills_section border">
+    <!-- <section id="skills" class="skills_section">
       <div class="div_1 mar_10">
         <div class="back_html">
            <div class="outcircle_skills_html">
@@ -186,7 +185,7 @@
             <circle cx="80" cy="80" r="67.3" stroke-linecap="round" />
             </svg>
         </div>
-     </div>
+     </div> -->
         <!-- <div class="AnimationSide border">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="155px" height="155px">
                 <defs>
@@ -229,8 +228,8 @@
         </div> -->
     </section> 
     <!----------  Education Section  ---------->
-    <section id="Education" class="Education_section border">
-        <div class="header_index">
+    <section id="Education" class="Education_section">
+        <div class="header_index" >
             <a>Aadarsha Secondary English School (ASES)  (2004-2018)</a>
             <button class= "tog_btn"  id="plus" onclick="hideshow()"><p>-</p></button>
         </div>
@@ -276,9 +275,9 @@
 
     </div>
     </section>
-    <section id="projects" class="Project_section border">
+    <section id="projects" class="Project_section">
         <div class="slider_wrapper">
-            <div class="slider">
+            <div class="slider" id="slider">
                 <img id="slider_1" src="project_sample/project_1.jpg" alt="#">
                 <img id="slider_2" src="project_sample/project_2.jpg" alt="#">
                 <img id="slider_3" src="project_sample/project_3.jpg" alt="#">
@@ -298,11 +297,11 @@
     </section>
     <!-------------------Form Section----------------------->
 
-    <section id="contact" class="contact_section border">
+    <section id="contact" class="contact_section">
         <div class="form_container">
             <form method="POST" action="form.php" class="form_wrapper">
 
-                <h1>Contact Us Form</h1>
+                <h1>Contact Me</h1>
                 <input type="text" class="form_input" name="FirstName" placeholder="First Name" required>
                 <input type="text" class="form_input" name="LastName" placeholder="Last Name" required>
                 <input type="email" class="form_input" name="email" placeholder="Email" required>
@@ -318,7 +317,8 @@
         
         <div class="footer_info">
             <h1 class="fot_logo">tHeWosh</h1>
-            <h3 class="fot_oth">Chabahil, Kathmandu</h3>
+            <h2 class="fot_oth">diwashacharya449@gmail.com</h2>
+            <h3 class="fot_oth">9825702484</h2>
         </div>
         <div class="footer_section_links">
             <a href="#home" class="">HOME</a>
