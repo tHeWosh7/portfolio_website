@@ -1,0 +1,21 @@
+@media (max-width:667px)
+{
+    .container_left{
+        display:none;
+        position:relative;
+        z-index:100;
+
+    }
+    
+    .container_right{
+        width:100%;
+    }
+
+    #imgg{
+        display:none;
+
+    }
+    .Home_section{
+        width:100%;
+    }
+}
