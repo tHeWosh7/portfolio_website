@@ -19,7 +19,6 @@
     .container_right{
         width:100vw;
         margin-left:-24vh;
-
     }
 
     #imgg{
@@ -27,6 +26,11 @@
 
     }
     .Home_section{
-        width:100%;
+        width:100vw;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        margin-top:-20vh;
+        padding-left: 5vh;
     }
 }

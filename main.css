@@ -47,6 +47,7 @@ section{
 }
 .nav_left{
    display: flex;
+   /* flex-wrap: wrap; */
    position:relative;
    justify-content: center;
    align-items:center;
@@ -61,6 +62,7 @@ section{
 }
 .container_left{
    margin:0;
+   flex-wrap: wrap;
    /* border-right: 4px solid cadetblue; */
    position:fixed;
    display: flex;
