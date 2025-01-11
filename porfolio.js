@@ -8,7 +8,7 @@ var typed = new Typed('#element', {
 var div= document.getElementById("div1");
 function hideshow()
 {
-  div.style.visibility="visible";
+  // div.style.visibility="visible";
   if (div.style.display==="none")
   {
     div.style.display="block";
@@ -21,6 +21,7 @@ function hideshow()
 var divv= document.getElementById("div2");
 function hideshow2()
 {
+  // divv.style.visibility="visible";
   if (divv.style.display==="none")
   {
     divv.style.display="block";
@@ -33,6 +34,7 @@ function hideshow2()
 var divvv= document.getElementById("div3");
 function hideshow3()
 {
+  // divvv.style.display="none";
   if (divvv.style.display==="none")
   {
     divvv.style.display="block";
