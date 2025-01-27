@@ -88,3 +88,4 @@ function rewrite3(){
 
 
 
+document.getElementById()
