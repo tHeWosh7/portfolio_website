@@ -1,6 +1,6 @@
 // js code for the running text on intro 
 var typed = new Typed('#element', {
-    strings: ['Front-End Developer', 'UI/UX Designer','Video Editor','Graphics Designer'],
+    strings: ['Front-End Developer','UI/UX Designer','Python Developer','Data Analyst'],
     typeSpeed: 35,
   });
 
@@ -85,7 +85,3 @@ function rewrite3(){
 // function sliscr(){
 //   scrl.style.d
 // }
-
-
-
-document.getElementById()
